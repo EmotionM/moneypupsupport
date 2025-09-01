@@ -1,101 +1,78 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Money Pup 幫助與支援</title>
-  <meta name="description" content="Money Pup 的幫助與支援頁面，提供常見問題、資料匯出/重設指引與聯絡方式。" />
+  <meta name="color-scheme" content="light dark">
   <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #f59e0b;
-      --link: #60a5fa;
+    :root{
+      --bg:#0d1b2a;
+      --card:#11233a;
+      --text:#e6edf3;
+      --muted:#9fb0c3;
+      --accent:#ffb703;
+      --accentText:#111;
+      --link:#4ea1ff;
     }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { padding: 40px 20px 10px; text-align: center; }
-    header h1 { margin: 0 0 6px; font-size: 28px; }
-    header p { margin: 0; color: var(--muted); }
-    .container { max-width: 920px; margin: 0 auto; padding: 20px; }
-    .card { background: var(--card); border-radius: 14px; padding: 18px; margin-bottom: 16px; border: 1px solid rgba(255,255,255,.06); }
-    .card h2 { margin: 0 0 8px; font-size: 20px; }
-    .card p { margin: 6px 0; color: var(--text); line-height: 1.6; }
-    .muted { color: var(--muted); }
-    ul { margin: 8px 0 0 20px; line-height: 1.8; }
-    code, pre { background: #0b1220; color: #cbd5e1; border-radius: 8px; padding: 10px; display: block; overflow-x: auto; }
-    footer { text-align: center; padding: 28px 12px; color: var(--muted); font-size: 14px; }
-    .badge { display: inline-block; background: #1f2937; color: var(--text); border: 1px solid rgba(255,255,255,.08); padding: 6px 10px; border-radius: 999px; font-size: 12px; margin-right: 8px; }
-    .cta { display: inline-block; background: var(--accent); color: #111827; border-radius: 10px; padding: 10px 14px; font-weight: 600; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, "Hiragino Sans", "Heiti TC", sans-serif;}
+    .wrap{max-width:820px;margin:0 auto;padding:24px 16px 40px;}
+    header{padding:8px 0 16px;}
+    h1{font-size:28px;margin:0 0 6px;}
+    p{line-height:1.6;margin:0 0 12px;}
+    .card{background:var(--card);border-radius:12px;padding:16px;margin:18px 0;}
+    h2{font-size:20px;margin:0 0 12px;}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .cta{
+      display:inline-block;
+      background:var(--accent);
+      color:var(--accentText);
+      font-weight:600;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+    }
+    .muted{color:var(--muted);font-size:14px}
+    .faq h3{margin:.6em 0 .2em;font-size:17px}
+    .faq p{margin:.2em 0 1em}
+    code{background:rgba(255,255,255,.08);padding:.1em .4em;border-radius:6px}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Money Pup 幫助與支援</h1>
-    <p class="muted">解答常見問題、提供操作指引與聯絡方式</p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Money Pup 幫助與支援</h1>
+      <p class="muted">解答常見問題，提供操作指引與聯絡方式</p>
+    </header>
 
-  <div class="container">
     <div class="card">
       <h2>聯絡我們</h2>
       <p>如需技術支援、回報問題或提供建議，歡迎電郵：</p>
       <p><a class="cta" href="mailto:contactemotionm@gmail.com">contactemotionm@gmail.com</a></p>
-      <p class="muted">來信請盡量附上 App 版本、iOS 版本、問題描述與重現步驟或截圖，能加速排查。</p>
+      <p class="muted">來信請盡量附上 App 版本、iOS 版本、問題描述與截圖，能加速排查。</p>
     </div>
 
-    <div class="card">
+    <div class="card faq">
       <h2>常見問題（FAQ）</h2>
-      <p><strong>Q1：如何快速記一筆？</strong><br/>
-      打開 App → 輸入金額 → 選擇「支出」或「收入」→ 選擇分類 → 按「記一筆」。</p>
 
-      <p><strong>Q2：如何查看圖表分析？</strong><br/>
-      首頁狗狗卡片旁按「支出分析」或「收入分析」，可切換月份並查看分類占比與明細。</p>
+      <h3>Q1：如何快速記一筆？</h3>
+      <p>打開 App → 輸入金額 → 選擇「支出」或「收入」→ 選擇分類 → 按「記一筆」。</p>
 
-      <p><strong>Q3：如何匯出資料（CSV）？</strong><br/>
-      App 內「設定」→「匯出」→ 會先顯示預覽與筆數／期間 → 按「匯出」→ 選擇儲存到檔案 App 或雲端。</p>
+      <h3>Q2：如何查看圖表分析？</h3>
+      <p>首頁「支出分析」或「收入分析」可切換月份並查看分類占比與明細。</p>
 
-      <p><strong>Q4：如何重設資料？</strong><br/>
-      App 內「設定」→「重設資料」→ 會跳出確認對話框 → 按「刪除所有資料」後，交易、等級與金幣會被重置。</p>
+      <h3>Q3：如何匯出資料（CSV）？</h3>
+      <p>設定 →「匯出」→ 選擇範圍 → 按「匯出」可儲存檔案或以電郵發送。</p>
 
-      <p><strong>Q5：我的資料儲存在哪裡？</strong><br/>
-      交易資料皆儲存在你的裝置上。你可以透過「設定 → 匯出」備份 CSV。</p>
+      <h3>Q4：如何重設資料？</h3>
+      <p>設定 →「重設資料」→ 會跳出確認對話框，按「刪除所有資料」後，交易與金幣將會被重置。</p>
+
+      <h3>Q5：我找不到某個功能</h3>
+      <p>請來信 <a href="mailto:contactemotionm@gmail.com">contactemotionm@gmail.com</a>，或在信中附上螢幕錄影與步驟，我們會盡快協助。</p>
     </div>
 
-    <div class="card">
-      <h2>隱私與條款</h2>
-      <p class="badge">文件</p>
-      <ul>
-        <li><a href="https://emotionm.github.io/moneypupprivacy/" target="_blank" rel="noopener">隱私政策</a></li>
-        <li><a href="https://emotionm.github.io/moneypupterms/" target="_blank" rel="noopener">服務條款</a></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>疑難排解</h2>
-      <ul>
-        <li><strong>匯出沒有反應：</strong>請確認已新增至少一筆交易；或嘗試重新啟動 App，再次於「設定 → 匯出」執行。</li>
-        <li><strong>無法儲存檔案：</strong>請確認 iOS「檔案」App 可用，且儲存目的地（iCloud/本機）有足夠空間與權限。</li>
-        <li><strong>App 行為異常：</strong>重新啟動裝置後重試，若仍持續發生，請來信並附上重現步驟與截圖。</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>資料掌控與備份</h2>
-      <p>你可隨時由「設定 → 匯出」取得 CSV 檔進行備份或分析；亦可由「設定 → 重設資料」刪除所有本機資料（不可復原）。</p>
-    </div>
-
-    <footer>
-      <div>Money Pup 支援頁 · 由 EmotionM 維護</div>
-      <div class="muted">最後更新：<span id="updated"></span></div>
-    </footer>
+    <p class="muted">© 2025 Money Pup</p>
   </div>
-
-  <script>
-    document.getElementById('updated').textContent = new Date().toLocaleDateString('zh-Hant', { year:'numeric', month:'long', day:'numeric' });
-  </script>
 </body>
 </html>
